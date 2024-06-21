@@ -58,7 +58,7 @@ I am using [EMR Bootstrap Action (BA)](https://docs.aws.amazon.com/emr/latest/Ma
 ![BA-Setup](images/ba-setup-custom-meterics.png)
 
 ## Using Custom CloudWatch Metrics to configure EMR Automatic Scaling
-As of now (EMR 5.30.1), you cannot use or configure custom metrics through the EMR console. The only way to use custom
+As of now (EMR 5.30.x+), you cannot use or configure custom metrics through the EMR console. The only way to use custom
  metrics to configure EMR automatic scaling is to launch the EMR cluster using AWS CLI. I'm using a separate JSON file [instance-group-config.json](config/instance-group-config.json) to pass the instance
  groups configuration and [configuration.json](config/configuration.json) file to update the default YARN calculator
 . Please change the configuration file based on your requirement. Here is the snippet of the configuration file
